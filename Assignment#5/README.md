@@ -10,11 +10,17 @@ you need to be able to upload a file from the client to the server using concurr
 
 Details:
 Once you start your client, you should display a menu from which a command is chosen
+
 **********welcome to NES 416 HW #5 *****************
+
 1- Download a file using UDP
+
 2- Upload a file using TCP
+
 3- Quit
+
 ***************************************************
+
 If the user selected 1, the same procedure as in assignment 4 is followed. If the user selected
 2, he/she is asked to enter a filename that should exist locally to be transferred/uploaded to the
 concurrent TCP server using a TCP connection and added to the server at its current working
