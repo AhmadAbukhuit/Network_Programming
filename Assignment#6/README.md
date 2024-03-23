@@ -38,31 +38,55 @@ command line. To so, you need to edit the /etc/services in your server machine a
 that specifies the port name as count_port and assign any value greater than 1024 if you are working
 locally. To avoid conflict if working on the course server, each student is required to use a port number
 for the server using the following format: 55abc for its connection, where abc is the least significant 3
-digits of your students ID. For example, a student whose ID is 12345 will have the server listening port
-= 55345
+digits of your students ID. For example, a student whose ID is 12345 will have the server listening port = 55345
+
 Example: (where Ti is the thread number)
+
 client$
+
 T1:Enter an Alpha-Numeric string to look in: hfgrtAf1fjhdADBFADRE123
+
 T1:Enter characters to be counted (as one string): rA1
+
 T1: Creating 3 threads to count for rA1
+
 T2: # of r’s in the first string=1
+
 T3: # of A’s in the first string=3
+
 T4: # of 1’s in the first string=2
+
 T1: # of total occurrences = 6
+
 T1: exiting…
+
 client$
+
 *note: the output order and thread numbers might differ on your machine for client and server
+
 Server$
+
 T8: waiting for client request
+
 T8: creating thread (report the thread ID)
+
 T8: number of created threads so far = 2 changes with every creation
+
 T9: received string: hfgrtAf1fjhdADBFADRE123r
+
 T9: # of r’s =1
+
 T9: sent result back, exited.
+
 T8: waiting for client request
+
 T8: creating thread (report the thread ID)
+
 T8: number of created threads so far = 3 changes with every creation
+
 T10: received string: hfgrtAf1fjhdADBFADRE1231
+
 T10: # of 1’s =2
+
 T10: sent result back, exited.
 and so on for all reaming threads
